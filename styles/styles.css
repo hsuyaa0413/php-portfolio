@@ -1,0 +1,158 @@
+/* @font-face {
+  font-family: "NeueMashina";
+  /* src: url("./fonts/NeueMachina-Regular.otf"), */
+/* src: url("../fonts/NeueMachina-Ultrabold.otf"); */
+
+:root {
+  --black-color: #18170c;
+  --yellow-color: #f0e27b;
+  --white-color: white;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: var(--black-color);
+  background: var(--yellow-color);
+}
+
+body {
+  background: var(--black-color);
+  background-attachment: fixed; /* works perfect */
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.navbar {
+  margin: 1em;
+  padding: 1em auto 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  font-family: "Abril Fatface";
+  font-weight: 500;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#logo span {
+  color: var(--yellow-color);
+}
+
+.nav-items > .menu-lists > li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.8em;
+  cursor: pointer;
+  transition: 0.5s;
+  color: var(--yellow-color);
+}
+
+.nav-items > .menu-lists > li:hover {
+  color: var(--white-color);
+  position: relative;
+  bottom: 3px;
+  transition: 5s;
+}
+
+.btn {
+  font-family: "Space Grotesk";
+  margin: 1em;
+  padding: 1em;
+  background-color: var(--yellow-color);
+  opacity: 0.9;
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--yellow-color);
+  transition: 0.1s;
+  border: 2px solid var(--yellow-color);
+}
+
+.hero {
+  margin: 1em;
+  padding-top: 5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.left-section {
+  width: 40%;
+}
+.left-section p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.left-section h1 {
+  color: var(--yellow-color);
+  font-weight: 700;
+}
+.left-section h4 {
+  color: var(--yellow-color);
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.cv-btn {
+  margin-top: 2em;
+  margin-left: -0.2em;
+}
+
+.right-section {
+  max-width: 60%;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.gradient {
+  height: 100%;
+  width: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(240, 226, 123, 0.15) 25%,
+    transparent 100%
+  );
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 30%;
+}
+
+img {
+  height: 100%;
+  width: 600px;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 30%;
+}
+
+.connect-section > h3 {
+  color: var(--white-color);
+  margin-top: 100px;
+}
+
+.connect-section > h3 > a {
+  color: var(--yellow-color);
+}
+
+.connect-section > h3 > a:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,9 @@
+<!-- <h1>
+    You're logged in as <?php echo $row['fname'] . $row['lname'] ?>
+</h1>
+<h3>Your Details:</h3>
+<ul>
+    <li>First Name : <?php echo $row['fname']?></li>
+    <li>Last Name : <?php echo $row['lname'] ?></li>
+    <li>Email Address : <?php echo $row['email']?></li>
+</ul> -->

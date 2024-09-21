@@ -1,0 +1,113 @@
+:root {
+  --black-color: #18170c;
+  --yellow-color: #f0e27b;
+  --white-color: white;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: var(--black-color);
+  background: var(--yellow-color);
+}
+
+body {
+  background-attachment: fixed; /* works perfect */
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.login-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-section {
+  width: 50%;
+  margin-left: 230px;
+  margin-top: 200px;
+}
+
+.left-section > img {
+  height: 550px;
+}
+
+.right-section {
+  background-color: var(--black-color);
+  width: 50%;
+  height: 100vh;
+  padding-top: 80px;
+  padding-left: 75px;
+}
+
+.btn {
+  font-family: "Space Grotesk";
+  padding: 1em;
+  background-color: var(--yellow-color);
+  opacity: 0.9;
+  color: var(--black-color);
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--yellow-color);
+  transition: 0.1s;
+  border: 2px solid var(--yellow-color);
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+p {
+  color: var(--yellow-color);
+  margin-top: 100px;
+}
+form {
+  padding-top: 30px;
+}
+
+input {
+  display: block;
+  width: 500px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 1rem;
+  border: none;
+  border: 2px solid var(--white-color);
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  outline: none;
+}
+input:focus {
+  color: var(--yellow-color);
+  border-color: var(--yellow-color);
+}
+#login-btn {
+  width: 500px;
+  font-size: 1rem;
+}
+
+#register-text {
+  color: white;
+}
+#register-text > a {
+  color: var(--yellow-color);
+}
+#register-text > a:hover {
+  opacity: 0.85;
+}
